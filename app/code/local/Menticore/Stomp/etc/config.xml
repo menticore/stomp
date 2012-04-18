@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <modules>
-        <Symmetrics_Stomp>
+        <Menticore_Stomp>
             <version>0.0.1</version>
-        </Symmetrics_Stomp>
+        </Menticore_Stomp>
     </modules>
     <global>
         <models>
             <stomp>
-                <class>Symmetrics_Stomp_Model</class>
+                <class>Menticore_Stomp_Model</class>
             </stomp>
         </models>
         <blocks>
             <stomp>
-                <class>Symmetrics_Stomp_Block</class>
+                <class>Menticore_Stomp_Block</class>
             </stomp>
         </blocks>
         <helpers>
             <stomp>
-                <class>Symmetrics_Stomp_Helper</class>
+                <class>Menticore_Stomp_Helper</class>
             </stomp>
         </helpers>
     </global>
     <adminhtml>
         <translate>
             <modules>
-                <Symmetrics_Stomp>
+                <Menticore_Stomp>
                     <files>
-                        <default>Symmetrics_Stomp.csv</default>
+                        <default>Menticore_Stomp.csv</default>
                     </files>
-                </Symmetrics_Stomp>
+                </Menticore_Stomp>
             </modules>
         </translate>
     </adminhtml>
@@ -38,7 +38,7 @@
             <stomp>
                 <use>standard</use>
                 <args>
-                    <module>Symmetrics_Stomp</module>
+                    <module>Menticore_Stomp</module>
                     <frontName>stomp</frontName>
                 </args>
             </stomp>

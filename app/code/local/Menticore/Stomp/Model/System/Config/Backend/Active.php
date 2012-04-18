@@ -1,5 +1,5 @@
 <?php
-class Symmetrics_Stomp_Model_System_Config_Backend_Active extends Mage_Core_Model_Config_Data
+class Menticore_Stomp_Model_System_Config_Backend_Active extends Mage_Core_Model_Config_Data
 {
     /**
      * Validates connection data given in $fields parameter. Returns true if
@@ -34,7 +34,7 @@ class Symmetrics_Stomp_Model_System_Config_Backend_Active extends Mage_Core_Mode
     /**
      * Validate connection before saving is_active = true to database.
      *
-     * @return Symmetrics_Stomp_Model_System_Config_Backend_Active
+     * @return Menticore_Stomp_Model_System_Config_Backend_Active
      *
      * @throws Zend_Queue_Exception
      */

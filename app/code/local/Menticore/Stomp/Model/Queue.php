@@ -1,10 +1,10 @@
 <?php
-class Symmetrics_Stomp_Model_Queue
+class Menticore_Stomp_Model_Queue
 {
     /**
      * Stomp connection object.
      *
-     * @var Symmetrics_Stomp_Model_Stomp
+     * @var Menticore_Stomp_Model_Stomp
      */
     protected $_stomp = null;
 
@@ -83,7 +83,7 @@ class Symmetrics_Stomp_Model_Queue
      * @param string $message Message to send.
      * @param array  $headers Headers to send (optional).
      *
-     * @return Symmetrics_Stomp_Model_Queue
+     * @return Menticore_Stomp_Model_Queue
      *
      * @throws Zend_Queue_Exception
      */

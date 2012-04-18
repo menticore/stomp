@@ -1,5 +1,5 @@
 <?php
-class Symmetrics_Stomp_Model_Stomp
+class Menticore_Stomp_Model_Stomp
 {
     /**
      * Used Stomp protocol version.
@@ -15,8 +15,8 @@ class Symmetrics_Stomp_Model_Stomp
     protected $_server = null;
     protected $_session = null;
     protected $_version = null;
-    protected $_connectionClass = 'Symmetrics_Stomp_Model_Stomp_Client_Connection';
-    protected $_frameClass = 'Symmetrics_Stomp_Model_Stomp_Frame';
+    protected $_connectionClass = 'Menticore_Stomp_Model_Stomp_Client_Connection';
+    protected $_frameClass = 'Menticore_Stomp_Model_Stomp_Frame';
 
     /**
      * Throws an exception depending on given frame data on read or write access
@@ -48,7 +48,7 @@ class Symmetrics_Stomp_Model_Stomp
      * @param string $password    Password to connect with (optional).
      * @param array  $versions    Stomp versions to use (optional).
      *
-     * @return Symmetrics_Stomp_Model_Stomp
+     * @return Menticore_Stomp_Model_Stomp
      *
      * @throws Zend_Queue_Exception
      */
@@ -102,7 +102,7 @@ class Symmetrics_Stomp_Model_Stomp
      * @param string $password    Password to connect with (optional).
      * @param array  $versions    Stomp versions to use (optional).
      *
-     * @return Symmetrics_Stomp_Model_Stomp
+     * @return Menticore_Stomp_Model_Stomp
      *
      * @throws Zend_Queue_Exception
      */
@@ -129,7 +129,7 @@ class Symmetrics_Stomp_Model_Stomp
      * @param string $password    Password to connect with (optional).
      * @param array  $versions    Stomp versions to use (optional).
      *
-     * @return Symmetrics_Stomp_Model_Stomp
+     * @return Menticore_Stomp_Model_Stomp
      *
      * @throws Zend_Queue_Exception
      */
@@ -151,7 +151,7 @@ class Symmetrics_Stomp_Model_Stomp
      *                              - content-length (default: auto)
      *                              - content-type (default: test/plain)
      *
-     * @return Symmetrics_Stomp_Model_Stomp
+     * @return Menticore_Stomp_Model_Stomp
      *
      * @throws Zend_Queue_Exception
      *
@@ -189,7 +189,7 @@ class Symmetrics_Stomp_Model_Stomp
      *                              - ack: Ack mode. If set to "client", client have to acknowledge
      *                                messages got from the server (default: auto)
      *
-     * @return Symmetrics_Stomp_Model_Stomp
+     * @return Menticore_Stomp_Model_Stomp
      *
      * @throws Zend_Queue_Exception
      *
@@ -219,7 +219,7 @@ class Symmetrics_Stomp_Model_Stomp
      * @param array  $headers     Additional headers. Possible headers can be:
      *                              - id: Client ID (default: empty)
      *
-     * @return Symmetrics_Stomp_Model_Stomp
+     * @return Menticore_Stomp_Model_Stomp
      *
      * @throws Zend_Queue_Exception
      *
@@ -247,7 +247,7 @@ class Symmetrics_Stomp_Model_Stomp
      * @param Zend_Queue_Stomp_Frame $message       Message to acknowledge.
      * @param string                 $transactionId Transaction id (optional).
      *
-     * @return Symmetrics_Stomp_Model_Stomp
+     * @return Menticore_Stomp_Model_Stomp
      *
      * @throws Zend_Queue_Exception
      */
@@ -270,7 +270,7 @@ class Symmetrics_Stomp_Model_Stomp
      * @param Zend_Queue_Stomp_Frame $message       Message to acknowledge.
      * @param string                 $transactionId Transaction id (optional).
      *
-     * @return Symmetrics_Stomp_Model_Stomp
+     * @return Menticore_Stomp_Model_Stomp
      *
      * @throws Zend_Queue_Exception
      */
@@ -292,7 +292,7 @@ class Symmetrics_Stomp_Model_Stomp
      *
      * @param string $transactionId Transaction ID (optional).
      *
-     * @return Symmetrics_Stomp_Model_Stomp
+     * @return Menticore_Stomp_Model_Stomp
      *
      * @throws Zend_Queue_Exception
      *
@@ -321,7 +321,7 @@ class Symmetrics_Stomp_Model_Stomp
      *
      * @param string $transactionId Transaction ID (optional).
      *
-     * @return Symmetrics_Stomp_Model_Stomp
+     * @return Menticore_Stomp_Model_Stomp
      *
      * @throws Zend_Queue_Exception
      *
@@ -344,12 +344,13 @@ class Symmetrics_Stomp_Model_Stomp
 //        }
         return $this;
     }
+
     /**
      * Rollback a transaction in progress.
      *
      * @param string $transactionId Transaction ID (optional).
      *
-     * @return Symmetrics_Stomp_Model_Stomp
+     * @return Menticore_Stomp_Model_Stomp
      *
      * @throws Zend_Queue_Exception
      *
@@ -376,7 +377,7 @@ class Symmetrics_Stomp_Model_Stomp
     /**
      * Graceful disconnect from the server.
      *
-     * @return Symmetrics_Stomp_Model_Stomp
+     * @return Menticore_Stomp_Model_Stomp
      */
     public function disconnect()
     {

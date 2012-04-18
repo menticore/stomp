@@ -1,10 +1,10 @@
 <?php
-class Symmetrics_Stomp_DebugController extends Mage_Core_Controller_Front_Action
+class Menticore_Stomp_DebugController extends Mage_Core_Controller_Front_Action
 {
     /**
      * Forwards user to noRoute if debugging mode is disabled.
      *
-     * @return Symmetrics_Stomp_DebugController
+     * @return Menticore_Stomp_DebugController
      */
     public function preDispatch()
     {

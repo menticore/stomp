@@ -1,5 +1,5 @@
 <?php
-class Symmetrics_Stomp_Model_Stomp_Frame extends Zend_Queue_Stomp_Frame
+class Menticore_Stomp_Model_Stomp_Frame extends Zend_Queue_Stomp_Frame
 {
     /**
      * Takes the current parameters and returns a Stomp Frame

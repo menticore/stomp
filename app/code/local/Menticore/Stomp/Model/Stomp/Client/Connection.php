@@ -1,5 +1,5 @@
 <?php
-class Symmetrics_Stomp_Model_Stomp_Client_Connection
+class Menticore_Stomp_Model_Stomp_Client_Connection
     extends Zend_Queue_Stomp_Client_Connection
 {
     /**
@@ -36,7 +36,7 @@ class Symmetrics_Stomp_Model_Stomp_Client_Connection
         $debug = Mage::getStoreConfigFlag('stomp/general/debug');
         if ($debug) {
             $output = $frame->toFrame();
-            Mage::log("Sent frame:\n" . $output, null, Symmetrics_Stomp_Helper_Data::DEBUG_FILE);
+            Mage::log("Sent frame:\n" . $output, null, Menticore_Stomp_Helper_Data::DEBUG_FILE);
         }
 
         return $this;
@@ -59,7 +59,7 @@ class Symmetrics_Stomp_Model_Stomp_Client_Connection
         $debug = Mage::getStoreConfigFlag('stomp/general/debug');
         if ($debug) {
             $output = $frame->toFrame();
-            Mage::log("Received frame:\n" . $output, null, Symmetrics_Stomp_Helper_Data::DEBUG_FILE);
+            Mage::log("Received frame:\n" . $output, null, Menticore_Stomp_Helper_Data::DEBUG_FILE);
         }
 
         return $frame;
