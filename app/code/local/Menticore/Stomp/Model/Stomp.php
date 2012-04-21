@@ -37,10 +37,40 @@ class Menticore_Stomp_Model_Stomp
      * @var Zend_Queue_Stomp_Client
      */
     protected $_client = null;
+
+    /**
+     * Stomp server information.
+     *
+     * @var string
+     */
     protected $_server = null;
+
+    /**
+     * Stomp session id.
+     *
+     * @var string
+     */
     protected $_session = null;
+
+    /**
+     * Stomp version supported by server.
+     *
+     * @var string
+     */
     protected $_version = null;
+
+    /**
+     * Connection class.
+     *
+     * @var string
+     */
     protected $_connectionClass = 'Menticore_Stomp_Model_Stomp_Client_Connection';
+
+    /**
+     * Stomp frame class.
+     *
+     * @var string
+     */
     protected $_frameClass = 'Menticore_Stomp_Model_Stomp_Frame';
 
     /**
