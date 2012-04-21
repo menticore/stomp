@@ -56,7 +56,7 @@ abstract class Menticore_Stomp_Model_DestinationAbstract
     public function __construct()
     {
         $config = Mage::getStoreConfig('stomp/general');
-        $this->_stomp = Mage::getModel('stomp/stomp');
+        $this->_stomp = Mage::getModel('stomp/stomp_interface');
         $this->_stomp->connect(
             $config['scheme'],
             $config['host'],

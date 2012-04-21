@@ -52,7 +52,7 @@ class Menticore_Stomp_Model_System_Config_Backend_Active extends Mage_Core_Model
         }
 
         // Try to connect to Stomp server.
-        $stomp = Mage::getModel('stomp/stomp');
+        $stomp = Mage::getModel('stomp/stomp_interface');
         $stomp->testConnect($scheme, $host, $port, $broker, $username, $password);
     }
 

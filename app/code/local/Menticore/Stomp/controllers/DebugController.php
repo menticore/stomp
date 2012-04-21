@@ -48,7 +48,7 @@ class Menticore_Stomp_DebugController extends Mage_Core_Controller_Front_Action
      */
     public function indexAction()
     {
-        $stomp = Mage::getModel('stomp/stomp');
+        $stomp = Mage::getModel('stomp/stomp_interface');
         $stomp->connect('tcp', 'localhost', '61613', 'mybroker', 'admin', 'password');
         $stomp->send('/queue/test', 'test');
         $stomp->send('/queue/test', 'muh');
